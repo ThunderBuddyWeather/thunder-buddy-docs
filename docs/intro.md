@@ -38,45 +38,4 @@ Thunder Buddy is designed to:
 
 Below is a simplified diagram showing how different components of the system interact:
 
-```plaintext
-                    +----------------------------------+
-                    |         User Devices           |
-                    |  (iOS/Android via Expo Go App)   |
-                    +---------------+------------------+
-                                    |
-                                    | (React Native App via Expo)
-                                    V
-                    +----------------------------------+
-                    |         Frontend Layer           |
-                    |    React Native with NativeWind  |
-                    +---------------+------------------+
-                                    |
-                                    | REST API Calls
-                                    V
-                    +----------------------------------+
-                    |         Backend API Layer        |
-                    |         (Flask Application)      |
-                    +---------------+------------------+
-                     /      |         \         \
-                    /       |          \         \
-                   V        V           V         V
-       +----------------+ +--------------+  +--------------+  
-       | Weatherbit API | |  OneSignal   |  | Google Maps  |  
-       | (Weather Data) | | (Push Notif.)|  | & Geolocation|
-       +----------------+ +--------------+  +--------------+  
-                          \       |        /
-                           \      |       /
-                            V     V      V
-                    +----------------------------------+
-                    |         PostgreSQL Database      |
-                    | (User Data, Alerts, Engagement   |
-                    |  Logs, Preferences & History)    |
-                    +----------------------------------+
-                                    |
-                                    | Analytics Processing
-                                    V
-                    +----------------------------------+
-                    |         Analytics Module         |
-                    |         (Pandas Scripts)         |
-                    +----------------------------------+
-```
+![Architecture Diagram](/img/architecture-diagram.svg)

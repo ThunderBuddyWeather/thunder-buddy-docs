@@ -66,6 +66,11 @@ const config: Config = {
           label: 'Documentation',
         },
         {
+          to: '/api',
+          label: 'API',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/ThunderBuddyWeather',
           label: 'GitHub',
           position: 'right',
