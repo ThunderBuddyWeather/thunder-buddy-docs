@@ -3,14 +3,11 @@
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "strict": true,
-    "jsx": "react-jsx",
-    "module": "ESNext",
-    "target": "ES6",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "moduleResolution": "Node",
-    "forceConsistentCasingInFileNames": true
+    "noImplicitAny": true,
+    "strictNullChecks": true
   },
-  "exclude": [".docusaurus", "build"],
-  "include": ["src/**/*.tsx"]
+  "exclude": [".docusaurus", "build"]
 }
