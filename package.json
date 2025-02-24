@@ -1,5 +1,5 @@
 {
-  "name": "thunder-buddy",
+  "name": "thunder-buddy-docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,28 +11,20 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/babel": "^3.7.0",
-    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/core": "3.7.0",
     "@docusaurus/preset-classic": "3.7.0",
-    "@docusaurus/theme-classic": "^3.7.0",
-    "@docusaurus/theme-common": "^3.7.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
-    "docusaurus": "^1.14.7",
-    "module-resolver": "^1.0.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/tsconfig": "3.7.0",
-    "@docusaurus/types": "^3.7.0",
-    "typescript": "~5.6.2"
+    "@docusaurus/types": "3.7.0"
   },
   "browserslist": {
     "production": [

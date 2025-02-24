@@ -1,41 +1,47 @@
 ---
 sidebar_position: 1
 ---
-# Thunder Buddy
 
-## Overview
+# Tutorial Intro
 
-A real-time weather and disaster alert system that provides timely and localized severe weather notifications. This system integrates weather data from Weatherbit, push notifications via OneSignal, interactive maps with Google Maps & Geolocation APIs, and robust analytics powered by Pandas. The mobile app is built using React Native with NativeWind CSS and deployed for demos via the Expo Go app.
+Let's discover **Docusaurus in less than 5 minutes**.
 
-Thunder Buddy is designed to:
+## Getting Started
 
-- Fetch and process severe weather data in real time using the Weatherbit API.
-- Deliver instant push notifications using OneSignal.
-- Provide an interactive map interface with Google Maps & Geolocation APIs for hyper-localized alerts.
-- Allow users to share alerts with friends and family.
-- Process engagement data using Pandas for analytical insights.
+Get started by **creating a new site**.
 
-## Tech Stack
+Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-- **Frontend Framework:** React Native with NativeWind CSS (for streamlined styling)
-- **Backend Technology:** Flask (Python)
-- **Database:** PostgreSQL
-- **APIs & Integrations:**
-  - Weatherbit API (for severe weather data)
-  - Google Maps & Geolocation APIs (for interactive maps and location detection)
-  - OneSignal (for push notification delivery)
-- **Analytics & Data Processing:** Pandas (Python)
-- **Testing & Quality Assurance:**
-  - pytest (for API, unit, and integration tests)
-  - Detox (for end-to-end mobile app testing)
-- **Deployment:**
-  - Frontend: Demo deployment via Expo Go app
-  - Backend: Flask application on EC2 instance
-- **CI/CD:** GitHub Actions
-- **Testing:** pytest, Detox
+### What you'll need
 
-## Architecture Diagram
+- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
+  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-Below is a simplified diagram showing how different components of the system interact:
+## Generate a new site
 
-![Architecture Diagram](/img/architecture-diagram.svg)
+Generate a new Docusaurus site using the **classic template**.
+
+The classic template will automatically be added to your project after you run the command:
+
+```bash
+npm init docusaurus@latest my-website classic
+```
+
+You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+
+The command also installs all necessary dependencies you need to run Docusaurus.
+
+## Start your site
+
+Run the development server:
+
+```bash
+cd my-website
+npm run start
+```
+
+The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+
+The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+
+Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
