@@ -1,41 +1,41 @@
-# Website
+---
+sidebar_position: 1
+---
+# Thunder Buddy
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+## Overview
 
-### Installation
+A real-time weather and disaster alert system that provides timely and localized severe weather notifications. This system integrates weather data from Weatherbit, push notifications via OneSignal, interactive maps with Google Maps & Geolocation APIs, and robust analytics powered by Pandas. The mobile app is built using React Native with NativeWind CSS and deployed for demos via the Expo Go app.
 
-```
-$ yarn
-```
+Thunder Buddy is designed to:
 
-### Local Development
+- Fetch and process severe weather data in real time using the Weatherbit API.
+- Deliver instant push notifications using OneSignal.
+- Provide an interactive map interface with Google Maps & Geolocation APIs for hyper-localized alerts.
+- Allow users to share alerts with friends and family.
+- Process engagement data using Pandas for analytical insights.
 
-```
-$ yarn start
-```
+## Tech Stack
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- **Frontend Framework:** React Native with NativeWind CSS (for streamlined styling)
+- **Backend Technology:** Flask (Python)
+- **Database:** PostgreSQL
+- **APIs & Integrations:**
+  - Weatherbit API (for severe weather data)
+  - Google Maps & Geolocation APIs (for interactive maps and location detection)
+  - OneSignal (for push notification delivery)
+- **Analytics & Data Processing:** Pandas (Python)
+- **Testing & Quality Assurance:**
+  - pytest (for API, unit, and integration tests)
+  - Detox (for end-to-end mobile app testing)
+- **Deployment:**
+  - Frontend: Demo deployment via Expo Go app
+  - Backend: Flask application on EC2 instance
+- **CI/CD:** GitHub Actions
+- **Testing:** pytest, Detox
 
-### Build
+## Architecture Diagram
 
-```
-$ yarn build
-```
+Below is a simplified diagram showing how different components of the system interact:
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+![Architecture Diagram](/img/architecture-diagram.svg)
